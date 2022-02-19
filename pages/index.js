@@ -20,11 +20,11 @@ export default function Home() {
 
 axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?select=*').then(function (response) {
   // handle success
-  console.log('daviidaddavdi ',response);
+  //console.log('daviidaddavdi ',response);
 
-  const ipAddy = response.data[response.data.length-1].notes;
+  //const ipAddy = response.data[response.data.length-1].notes;
 
- window.location.href=`http://${ipAddy}:5000/mobile`;
+ //window.location.href=`http://${ipAddy}:5000/mobile`;
 
 })
 .catch(function (error) {
