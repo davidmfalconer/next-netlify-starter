@@ -18,11 +18,11 @@ export default function Home() {
 
 <script>
     
-    import axios from 'axios';
+
     
 const url = "https://www.yahoo.com";
 
-axios.get(url).then(function (response) {
+fetch(url, {method:'get', headers: {'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzam1qd3Fyb29weWNhZ3JhbHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTQyNDgsImV4cCI6MTk2MDc3MDI0OH0.SXgUxK8QX4gCjR1VOVj-ClGHt0BGSa-GxpqRKGvDC4U','Content-Type':'application/json'}} ).then(function (response) {
 
     
   console.log('daviidaddavd2 ',response);
