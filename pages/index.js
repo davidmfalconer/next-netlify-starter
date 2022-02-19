@@ -18,6 +18,8 @@ export default function Home() {
 
 <script>
     
+    import axios from 'axios';
+    
 const url = "https://www.yahoo.com";
 
 axios.get(url).then(function (response) {
