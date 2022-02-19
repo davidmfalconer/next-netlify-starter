@@ -12,6 +12,44 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to my app!" />
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+
+<script>
+
+  //https://61e7b23fe32cd90017acbc9d.mockapi.io/api/door/blahdoor
+
+  // let options = {
+  //   method: 'GET',
+  //   url: 'https://61e7b23fe32cd90017acbc9d.mockapi.io/api/door/blahdoor'
+  // }
+
+console.log('starting');
+
+
+  axios.get(' window.location.href=`http://${ipAddy}:5000/mobile`;')
+.then(function (response) {
+  // handle success
+  console.log('daviidaddavdi ',response);
+
+  const ipAddy = response.data[response.data.length-1].notes;
+
+ window.location.href=`http://${ipAddy}:5000/mobile`;
+
+})
+.catch(function (error) {
+  // handle error
+  console.log(error);
+})
+.then(function () {
+  // always executed
+});
+
+
+</script>
+    
+    
         <p className="description">
           david <code>pages/index.js</code>
         </p>
