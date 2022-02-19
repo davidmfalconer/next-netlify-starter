@@ -17,19 +17,7 @@ export default function Home() {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 
 <script>
-
-  //https://61e7b23fe32cd90017acbc9d.mockapi.io/api/door/blahdoor
-
-  // let options = {
-  //   method: 'GET',
-  //   url: 'https://61e7b23fe32cd90017acbc9d.mockapi.io/api/door/blahdoor'
-  // }
-
-console.log('starting');
-
-
-  axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?select=*', headers={"apikey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzam1qd3Fyb29weWNhZ3JhbHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTQyNDgsImV4cCI6MTk2MDc3MDI0OH0.SXgUxK8QX4gCjR1VOVj-ClGHt0BGSa-GxpqRKGvDC4U", "Content-Type":"application/json"})
-.then(function (response) {
+axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?select=*', headers={"apikey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzam1qd3Fyb29weWNhZ3JhbHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTQyNDgsImV4cCI6MTk2MDc3MDI0OH0.SXgUxK8QX4gCjR1VOVj-ClGHt0BGSa-GxpqRKGvDC4U", "Content-Type":"application/json"}).then(function (response) {
   // handle success
   console.log('daviidaddavdi ',response);
 
