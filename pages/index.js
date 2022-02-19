@@ -18,11 +18,12 @@ export default function Home() {
 
 <script>
     
-const url = "https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable";
+const url = "https://www.yahoo.com";
 
 axios.get(url).then(function (response) {
-  // handle success
-  console.log('daviidaddavdi ',response);
+
+    
+  console.log('daviidaddavd2 ',response);
     
   const ipAddy = response.data[response.data.length-1].notes;
 
