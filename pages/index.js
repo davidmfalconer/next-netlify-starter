@@ -18,7 +18,7 @@ export default function Home() {
 
 <script>
 
-axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?select=*').then(function (response) {
+axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?').then(function (response) {
   // handle success
   //console.log('daviidaddavdi ',response);
 
@@ -27,13 +27,7 @@ axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?sel
  //window.location.href=`http://${ipAddy}:5000/mobile`;
 
 })
-.catch(function (error) {
-  // handle error
-  console.log(error);
-})
-.then(function () {
-  // always executed
-});
+
 
 </script>
     
