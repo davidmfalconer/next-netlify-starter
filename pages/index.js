@@ -21,6 +21,7 @@ export default function Home() {
 
     
 const url = "https://www.yahoo.com";
+ const res = "";
 
 axios.get('https://jsonplaceholder.typicode.com/todos/1')
   .then((res) => {
