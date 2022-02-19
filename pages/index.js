@@ -25,6 +25,7 @@ const url = "https://www.yahoo.com";
 axios.get('https://jsonplaceholder.typicode.com/todos/1')
   .then((res) => {
     // Do something with successful response
+    console.log('RES ', res);
   })
   .catch((err) => {
     // Do something with the error
