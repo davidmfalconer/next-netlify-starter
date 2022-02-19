@@ -17,14 +17,16 @@ export default function Home() {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 
 <script>
+    
+const url = "https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?select=*";
 
-axios.get('https://asjmjwqroopycagralvg.supabase.co/rest/v1/frontdoortvtable?').then(function (response) {
+axios.get(url,{'headers': {'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzam1qd3Fyb29weWNhZ3JhbHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTQyNDgsImV4cCI6MTk2MDc3MDI0OH0.SXgUxK8QX4gCjR1VOVj-ClGHt0BGSa-GxpqRKGvDC4U','Content-Type':'application/json'}}).then(function (response) {
   // handle success
-  //console.log('daviidaddavdi ',response);
+  console.log('daviidaddavdi ',response);
 
-  //const ipAddy = response.data[response.data.length-1].notes;
+  const ipAddy = response.data[response.data.length-1].notes;
 
- //window.location.href=`http://${ipAddy}:5000/mobile`;
+ window.location.href=`http://${ipAddy}:5000/mobile`;
 
 })
 
