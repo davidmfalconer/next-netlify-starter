@@ -21,16 +21,12 @@ export default function Home() {
 
     
 const url = "https://www.yahoo.com";
- const res = "";
 
-axios.get('https://jsonplaceholder.typicode.com/todos/1')
-  .then((res) => {
-    // Do something with successful response
-    console.log('RES ', res)
-  })
-  .catch((err) => {
-    // Do something with the error
-  });
+    
+    response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+  
+  console.log('response is ', response);
+
 
 </script>
     
