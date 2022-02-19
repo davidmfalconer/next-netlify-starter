@@ -22,17 +22,13 @@ export default function Home() {
     
 const url = "https://www.yahoo.com";
 
-fetch(url, {method:'get', headers: {'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzam1qd3Fyb29weWNhZ3JhbHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDUxOTQyNDgsImV4cCI6MTk2MDc3MDI0OH0.SXgUxK8QX4gCjR1VOVj-ClGHt0BGSa-GxpqRKGvDC4U','Content-Type':'application/json'}} ).then(function (response) {
-
-    
-  console.log('daviidaddavd2 ',response);
-    
-  const ipAddy = response.data[response.data.length-1].notes;
-
- window.location.href=`http://${ipAddy}:5000/mobile`;
-
-})
-
+axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  .then((res) => {
+    // Do something with successful response
+  })
+  .catch((err) => {
+    // Do something with the error
+  });
 
 </script>
     
